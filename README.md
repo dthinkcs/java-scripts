@@ -10,8 +10,8 @@ scripts in java
 
 EVEN THREAD:
 
-[ "abcd3", "cdef1", "dghef3"]
-[ "abcd2", "cdef2", "dghef2"]
+[ "abcd3", "cdef1", "dghef3"] <br>
+[ "abcd2", "cdef2", "dghef2"] <br>
 [ "abcd1", "cdef3", "dghef1"]
 
 
