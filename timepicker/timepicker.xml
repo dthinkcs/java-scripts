@@ -1,0 +1,7 @@
+                <TimePicker
+                    android:id="@+id/timePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numbersSelectorColor="?attr/actionMenuTextColor"
+                    android:numbersBackgroundColor="@android:color/darker_gray"
+                    android:headerBackground="@android:color/darker_gray" />
