@@ -1,15 +1,29 @@
 //using Color
 view1.setBackgroundColor(Color.argb(255,0,255,0));
-
-
 //using CheckBox
 View checkBox= findViewById(R.id.checkBoxItem1);
+// RadioButton
+RadioGroup radioGroup = findViewById(R.id.radioGroup); 
+RadioGroup radioGroup1 = findViewById(R.id.radioGroup2); 
+RadioGroup radioGroup2 = findViewById(R.id.radioGroup3); 
+int selectedId = radioGroup.getCheckedRadioButtonId(); 
+int selectedId1 = radioGroup1.getCheckedRadioButtonId(); 
+int selectedId2 = radioGroup2.getCheckedRadioButtonId();
+if (selectedId == findViewById(R.id.radioButton).getId()) { c += 10; } 
+if (selectedId1 == findViewById(R.id.radioButton9).getId()) { c += 10; } 
+if (selectedId2 == findViewById(R.id.radioButton12).getId()) { c += 10; }
 
 //using Intent
-public static final String EXTRA_MESSAGE = "com.example.abhishek.lab2q1.MESSAGE";
+public static final String EXTRA_MESSAGE = "com.example.rishabh.lab2q1.MESSAGE";
 Intent myIntent = new Intent(this, Main2Activity.class);
 myIntent.putExtra(EXTRA_MESSAGE, itemList);
 startActivity(myIntent);
+
+// using Internt getStringExtra
+t = findViewById(R.id.textView2);
+String s = getIntent().getStringExtra(MainActivity.EXTRA_MESSAGE);
+t.setText(s);
+Toast.makeText(this, s, Toast.LENGTH_LONG).show();
 
 //using Bundle
 
